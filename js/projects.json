@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "question": "Monitoring",
+      "answer": "I built a monitoring and alerting system with Datadog and Slack integrations to improve incident response.",
+      "link": "screenshots.html#monitoring",
+      "keywords": ["monitoring", "datadog", "alerts"]
+    },
+    {
+      "question": "Containers",
+      "answer": "I deployed containerized web apps with automated scaling and monitoring dashboards.",
+      "link": "screenshots.html#containers",
+      "keywords": ["container", "containers", "docker", "kubernetes"]
+    },
+    {
+      "question": "CI/CD",
+      "answer": "I implemented CI/CD pipelines using GitHub Actions for automated testing and deployments.",
+      "link": "screenshots.html#cicd",
+      "keywords": ["ci/cd", "cicd", "pipeline", "automation"]
+    },
+    {
+      "question": "Linux",
+      "answer": "I completed a 30-day Linux challenge covering scripting, system admin and server automation.",
+      "link": "screenshots.html#linux",
+      "keywords": ["linux", "bash", "shell"]
+    },
+    {
+      "question": "Cloud",
+      "answer": "I deployed scalable infra on Azure & GCP and did cost-optimization work.",
+      "link": "screenshots.html#cloud",
+      "keywords": ["cloud", "azure", "gcp", "aws"]
+    }
+  ],
+  "defaultReply": "Try asking about monitoring, cloud, containers, automation (CI/CD), or Linux."
+}
