@@ -207,19 +207,22 @@ async function sendMessage() {
       botDiv.className = "message bot";
       botDiv.textContent = r.text;
       chatBox.appendChild(botDiv);
-
-      if (r.link) {
-        const linkDiv = document.createElement("div");
-        linkDiv.className = "message bot";
-        const a = document.createElement("a");
-        a.href = r.link;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.textContent = "🔗 See project screenshots";
-        linkDiv.appendChild(a);
-        chatBox.appendChild(linkDiv);
-      }
+if (r.link) {
+    const linkDiv = document.createElement("div");
+    linkDiv.className = "message bot";
+    const a = document.createElement("a");
+    a.href = "#"; // prevents default navigation
+    a.textContent = "🔗 View Screenshot";
+    a.style.cursor = "pointer"; // makes it obvious it's clickable
+    a.onclick = function(e) {
+        e.preventDefault(); // prevent page jump
+        openImage(r.link);  // call your modal function
+    };
+    linkDiv.appendChild(a);
+    chatBox.appendChild(linkDiv);
+}
     }
+
     chatBox.scrollTop = chatBox.scrollHeight;
   }, 1200);
 
@@ -275,3 +278,4 @@ jQuery(function($) {
   // Initial UI sync
   updateUI();
 });
+
