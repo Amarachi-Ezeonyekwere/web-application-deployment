@@ -1,0 +1,6 @@
+# _config.yml
+# Prevent non-site files from being deployed to GitHub Pages
+exclude:
+  - "ReadME.md"
+  - "Screenshots"
+  - "CNAME"
