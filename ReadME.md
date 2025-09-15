@@ -81,16 +81,16 @@ This mirrors how businesses use **continuous deployment** to ship features faste
 ##  Demo Screenshots
 
 Webpage-Front View
-[webpage-front](./Screenshot/web-page.jpg)
+![webpage-front](./Screenshot/web-page.jpg)
 
 Webpage-Back View
-[webpage-back](./Screenshot/web-page2.jpg)
+![webpage-back](./Screenshot/web-page2.jpg)
 
 AI Chatbot Integration
-[AI-chatbot](./Screenshot/web-page3.jpg)
+![AI-chatbot](./Screenshot/web-page3.jpg)
 
 Git Page
-[gitpage](./Screenshot/git-pages.jpg)
+![gitpage](./Screenshot/git-pages.jpg)
 
 
 ---
@@ -100,6 +100,19 @@ Git Page
 
 For personal showcase purposes only.
 You’re welcome to fork/adapt for your own learning journey.
+
+
+##  Codebase Location
+The main website code is stored in the **`master`** branch.  
+
+[Click here to view the codebase](https://github.com/Amarachi-Ezeonyekwere/web-application-deployment/tree/master)
+
+⚠️ Important: If you are forking this project to work with the code,  
+please switch to the **`master` branch** `git checkout master`
+
+ 
+
+This branch (`docs`) is for project documentation, explanations, and supporting files.
 
 
 ---
