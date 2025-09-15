@@ -80,9 +80,16 @@ This mirrors how businesses use **continuous deployment** to ship features faste
 
 ##  Demo Screenshots
 
+Webpage-Front View
 [webpage-front](./Screenshot/web-page.jpg)
+
+Webpage-Back View
 [webpage-back](./Screenshot/web-page2.jpg)
+
+AI Chatbot Integration
 [AI-chatbot](./Screenshot/web-page3.jpg)
+
+Git Page
 [gitpage](./Screenshot/git-pages.jpg)
 
 
