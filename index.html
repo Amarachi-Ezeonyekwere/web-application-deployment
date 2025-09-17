@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Moonlight CSS Template</title>
+        <title>CloudTechbyAmara</title>
 <!-- 
-Moonlight Template 
+Moonlight Template
 http://www.templatemo.com/tm-512-moonlight
 -->
         <meta name="description" content="">
@@ -26,6 +26,44 @@ http://www.templatemo.com/tm-512-moonlight
     </head>
 
 <body>
+</script>
+<!-- Chatbot Section -->
+<div id="chat-container" class="collapsed">
+  <div id="chat-header">
+    <span>💬 Chat with me</span>
+    <button id="toggle-chat">+</button> <!-- <- required -->
+  </div>
+  <div id="chat-box"></div>
+  <div id="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Ask me about my projects..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+<!-- Modal Structure -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<!-- optional floating bubble -->
+<div id="chat-bubble">💬</div>
+
+
+<script>
+function openImage(src) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+document.querySelector(".close").onclick = function() {
+  document.getElementById("imageModal").style.display = "none";
+};
+</script>
+
+<!-- ✅ Only ONE main.js include, with defer -->
+<script src="js/main.js" defer></script>
+
     
     <div class="sequence">
   
@@ -46,8 +84,8 @@ http://www.templatemo.com/tm-512-moonlight
   <ul>
     <li><a href="#1"><i class="fas fa-home"></i> <em>Home</em></a></li>
     <li><a href="#2"><i class="fas fa-user"></i> <em>About</em></a></li>
-    <li><a href="#3"><i class="fas fa-pencil-alt"></i> <em>Entries</em></a></li>
-    <li><a href="#4"><i class="fas fa-image"></i> <em>Work</em></a></li>
+    <li><a href="#3"><i class="fas fa-pencil-alt"></i> <em>Services</em></a></li>
+    <li><a href="#4"><i class="fas fa-image"></i> <em>Projects</em></a></li>
     <li><a href="#5"><i class="fas fa-envelope"></i> <em>Contact</em></a></li>
   </ul>
 </nav>
@@ -74,18 +112,16 @@ http://www.templatemo.com/tm-512-moonlight
                     <div class="col-md-6">
                         <div class="left-content">
                             <h2>About Me</h2>
-                            <p>I’m a Cloud & DevOps Engineer | with a background in cloud infrastructure and automation. My expertise bridges DevOps and Cloud Engineering, enabling me to build scalable, secure, and automated systems.
-.</p> 
+                            <p>I’m Cloud & DevOps Engineer skilled in building scalable environments across AWS, Azure, and GCP. Experienced with IaC (Terraform), CI/CD (GitHub Actions), Docker/Kubernetes, and monitoring (Datadog, ELK) to deliver reliable, automated systems.</p> 
 <p><strong>Recent Projects:</strong></p>
 <ul style="font-size: 12px; line-height: 1.6; margin-left: 20px; color: #fff;">
   <li>Built a monitoring and alerting system with Datadog and Slack integrations to improve incident response.</li>
-  <li>Deployed containerized web applications with automated scaling and monitoring dashboards.</li>
-  <li>Implemented CI/CD pipelines for automated testing and deployment across cloud development environments.</li>
+  <li>Designed and implemented a GitHub Actions CI/CD pipeline to build, test, and deploy a Python Flask app into Docker Hub containers.</li>
+  <li>Designed and deployed a 3-tier cloud architecture on AWS (Dev, Staging, Production) using Terraform, ensuring reproducible and error-free environment provisioning.</li>
 </ul>
 <p></p>
 
-                            <p>With over 3 years of experience in technical suport and recent hands-on projects in DevOps and Cloud Engineering, I bring a unique hybrid skill set: the ability to troubleshoot systems, and engineer reliable infrastructure.</p>
-                            <p>I’m actively open to remote opportunities as a Cloud Engineer, or DevOps Engineer, where I can contribute to automation, infrastructure reliability, and exceptional user experiences. </p>
+                            <p>I’m actively open to remote opportunities as a Cloud or DevOps Engineer, where I can contribute to automation, infrastructure reliability, and Security. </p>
                           <div class="main-btn"><a href="#3">Read More</a></div>
                       </div>
                     </div>
@@ -108,7 +144,7 @@ http://www.templatemo.com/tm-512-moonlight
                                         <div class="col-md-6">
                                             <div class="left-content">
                                                 <h2>Cloud Engineer</h2>
-                                                <p> I deploy secure, scalable and cost optimized cloud infrastructure meeting the needs of business pain points and ensuring revenue is not compromised.</p>
+                                                <p> I design and deploy secure, scalable, and cost-optimized cloud infrastructures on AWS, GCP using Terraform, Docker, Kubernetes, and CI/CD pipelines, helping businesses solve critical challenges, streamline operations, and protect revenue growth.</p>
                                                 <div class="main-btn"><a href="#4">Continue Reading</a></div>
                                             </div>
                                         </div>
@@ -131,7 +167,7 @@ http://www.templatemo.com/tm-512-moonlight
                                         <div class="col-md-6">
                                             <div class="right-content">
                                                 <h2>DevOps Engineer</h2>
-                                                <p> I work with development and operations teams to enhance collaboration and productivity by automating infrastructure, workflows, and continuous integration/continuous deployment (CI/CD) processes.</p>
+                                                <p>I work with development and operations teams to enhance collaboration and productivity by automating infrastructure and workflows with Terraform, Docker, Kubernetes, and Git/GitHub, implementing secure CI/CD pipelines, and integrating monitoring and observability through Datadog and ELK to ensure reliability, performance, and security at scale.</p>
                                                 <div class="main-btn"><a href="#4">Continue Reading</a></div>
                                             </div>
                                         </div>
@@ -198,7 +234,7 @@ http://www.templatemo.com/tm-512-moonlight
                                     <a href="img/fourth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
                                         <div class="hover-content">
                                             <h2>Number Four</h2>
-                                            <p>Web Deployment Using Docker & Github Actions CI/CD Pipeline.</p>
+                                            <p>Phython Flask Deployment Using Docker, Kubernetes & Github Actions CI/CD Pipeline.</p>
                                         </div>
                                     </div></a>
                                     <div class="image">
@@ -213,7 +249,7 @@ http://www.templatemo.com/tm-512-moonlight
                                     <a href="img/fifth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
                                         <div class="hover-content">
                                             <h2>Number Five</h2>
-                                            <p>Infrastructure as a Code with Terraform + Docker and Nginx Provider.</p>
+                                            <p>3-tier architecture deployment on AWS with Terraform + Docker + Nginx + CICD Pipeline.</p>
                                         </div>
                                     </div></a>
                                     <div class="image">
@@ -282,51 +318,8 @@ http://www.templatemo.com/tm-512-moonlight
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/fifth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Ten</h2>
-                                            <p>Log Management with ELK Stack</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/fifth_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/first_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Eleven</h2>
-                                            <p>Scripting.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/first_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/second_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
-                                        <div class="hover-content">
-                                            <h2>Number Twelve</h2>
-                                            <p>Publications on medium.</p>
-                                        </div>
-                                    </div></a>
-                                    <div class="image">
-                                        <img src="img/second_item.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
+
                     </div>
                 </div>
             </div>
@@ -362,12 +355,12 @@ http://www.templatemo.com/tm-512-moonlight
   </div>
 </div>
 
-
         <div class="footer">
           <div class="content">
               <p>Copyright &copy; 2025 Your Company . <a href="http://www.cloudtechbyamara.online"><cloudtechbyamara class="online">cloudtechbyamara.online</a> by <a href="http://www.html5max.com" target="_parent">HTML5 Max</a></p>
           </div>
         </div>
+
 
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -416,42 +409,7 @@ http://www.templatemo.com/tm-512-moonlight
             log: function() { }
         };
     }
-    </script>
-<!-- Chatbot Section -->
-<div id="chat-container" class="collapsed">
-  <div id="chat-header">
-    <span>💬 Chat with me</span>
-    <button id="toggle-chat">+</button> <!-- <- required -->
-  </div>
-  <div id="chat-box"></div>
-  <div id="chat-input-area">
-    <input type="text" id="chat-input" placeholder="Ask me about my projects..." />
-    <button onclick="sendMessage()">Send</button>
-  </div>
-</div>
-<!-- Modal Structure -->
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
-<!-- optional floating bubble -->
-<div id="chat-bubble">💬</div>
-
-<script src="js/main.js"></script>
-
-<script>
-function openImage(src) {
-  var modal = document.getElementById("imageModal");
-  var modalImg = document.getElementById("modalImage");
-  modal.style.display = "block";
-  modalImg.src = src;
-}
-
-document.querySelector(".close").onclick = function() {
-  document.getElementById("imageModal").style.display = "none";
-};
 </script>
-
 </body>
 </html>
 
